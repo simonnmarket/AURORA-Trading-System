@@ -1,0 +1,3 @@
+   Teste de integração ClickUp + GitHub
+   Data: 19-01-2026
+   Validação do fluxo completo
