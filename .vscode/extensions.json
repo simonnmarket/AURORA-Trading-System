@@ -1,0 +1,1 @@
+{\n  "recommendations": [\n    "ms-python.python",\n    "ms-toolsai.jupyter",\n    "ms-python.autopep8",\n    "ms-python.flake8",\n    "esbenp.prettier-vscode",\n    "ms-vscode.pylance",\n    "meticulousmetaverse.pylint",\n    "ms-toolsai.jupyter",\n    "deepset.haystack-vscode",\n    "davidanson.vscode-markdownlint"\n  ]\n}
