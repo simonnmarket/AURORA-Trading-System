@@ -1,0 +1,17 @@
+audit_report:
+  timestamp: "2026-01-31 22:07:15"
+  user_login: "simonnmarket"
+  actions:
+    - action: "login"
+      status: "success"
+      details: "User logged in successfully"
+    - action: "view_orders"
+      status: "success"
+      details: "User viewed their orders"
+    - action: "place_order"
+      status: "failed"
+      details: "Insufficient funds to place the order"
+  summary:
+    total_actions: 3
+    successful_actions: 2
+    failed_actions: 1
