@@ -1,0 +1,1 @@
+fastapi==0.103.1\nprometheus_client==0.14.1\nmql5==0.1.1\npytest==7.2.0\nblack==22.3.0\nflake8==4.0.1\nmypy==0.910\ndjango-debug-toolbar==3.2
