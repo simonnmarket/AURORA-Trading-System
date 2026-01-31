@@ -1,0 +1,9 @@
+{  
+    "python.analysis.typeCheckingMode": "basic",  
+    "python.linting.enabled": true,  
+    "python.linting.pyLintEnabled": true,  
+    "python.formatting.provider": "autopep8",  
+    "docker.enableLinting": true,  
+    "sonarlint.connectedMode.project": "my_project_id",  
+    "git.confirmSync": false  
+}
