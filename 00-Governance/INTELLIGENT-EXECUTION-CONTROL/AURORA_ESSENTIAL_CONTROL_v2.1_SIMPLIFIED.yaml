@@ -1,0 +1,36 @@
+github_storage:
+  branch: main
+metadata:
+  created_by: simonnmarket
+  created_at: 2026-02-01 11:38:18
+resumo_executivo: |
+  This document outlines the essential controls for the AURORA system...
+aprovacoes:
+  - name: John Doe
+    role: Project Manager
+    date: 2026-01-30
+  - name: Jane Smith
+    role: CTO
+    date: 2026-01-31
+explicacao_ceo:
+  questoes:
+    - "Qual é o objetivo principal do AURORA?"
+    - "Quais são os benefícios esperados?"
+    - "Como mediremos o sucesso?"
+solicitacao_tecnica_template: |
+  [Template for technical request]
+relatorio_conclusao_template: |
+  [Template for conclusion report]
+fluxo_operacional:
+  passos:
+    - "Passo 1: Início do processo."
+    - "Passo 2: Avaliação inicial."
+    - "Passo 3: Aprovação das etapas."
+    - "Passo 4: Implementação."
+    - "Passo 5: Revisão final."
+declaracao_ativacao:
+  assinaturas:
+    - name: John Doe
+      date: 2026-02-01
+    - name: Jane Smith
+      date: 2026-02-01
