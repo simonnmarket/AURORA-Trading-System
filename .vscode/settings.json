@@ -1,1 +1,77 @@
-{\n    \"python.pythonPath\": \"./venv/bin/python\",\n    \"python.formatting.provider\": \"black\",\n    \"python.linting.enabled\": true,\n    \"python.linting.pylintEnabled\": true,\n    \"python.linting.flake8Enabled\": true,\n    \"python.linting.mypyEnabled\": true,\n    \"python.testing.unittestEnabled\": true,\n    \"python.testing.pytestEnabled\": false,\n    \"python.testing.nosetestsEnabled\": false,\n    \"python.testing.cwd\": \".\",\n    \"debug.server.port\": 5678\n}
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "${workspaceFolder}\\venv\\Scripts\\pylint.exe",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}\\venv\\Scripts\\black.exe",
+  "python.formatting.blackArgs": ["--line-length=120"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestPath": "${workspaceFolder}\\venv\\Scripts\\pytest.exe",
+  
+  "sonarlint.pathToCompileCommands": "",
+  "sonarlint.servers": {
+    "aurora-sonar": {
+      "serverUrl": "http://localhost:9000",
+      "token": "squ_${SONAR_TOKEN}"
+    }
+  },
+  "sonarlint.connectedMode.project": {
+    "projectKey": "aurora-trading-system"
+  },
+  
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.formatOnSave": true,
+  "editor.rulers": [100, 120],
+  "editor.wordWrap": "on",
+  
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/venv": true
+  },
+  
+  "git.ignoreLimitWarning": true,
+  "git.autofetch": true,
+  
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  
+  "docker.dockerPath": "C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe",
+  "docker.enableDockerCertificateWarning": false,
+  
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    }
+  },
+  
+  "search.exclude": {
+    "**/.venv": true,
+    "**/node_modules": true,
+    "**/.pytest_cache": true
+  },
+  
+  "AURORA_ENV": "development",
+  "AURORA_LOG_LEVEL": "INFO",
+  "AURORA_API_PORT": 8000,
+  "AURORA_BROKER_TIMEOUT_MS": 5000
+}
