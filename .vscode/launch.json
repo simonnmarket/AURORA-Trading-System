@@ -1,0 +1,98 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+    },
+    {
+      "name": "Python: Module",
+      "type": "python",
+      "request": "launch",
+      "module": "aurora",
+      "console": "integratedTerminal",
+      "pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+      "args": []
+    },
+    {
+      "name": "Python: FastAPI Server",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "src.api.main:app",
+        "--reload",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ],
+      "jinja": true,
+      "justMyCode": true,
+      "pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+    },
+    {
+      "name": "Python: Pytest",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "${file}",
+        "-v",
+        "--tb=short"
+      ],
+      "console": "integratedTerminal",
+      "pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Pytest All",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/",
+        "-v",
+        "--cov=src",
+        "--cov-report=html"
+      ],
+      "console": "integratedTerminal",
+      "pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Attach to Process",
+      "type": "python",
+      "request": "attach",
+      "processId": "${command:pickProcess}",
+      "justMyCode": false
+    },
+    {
+      "name": "Python: Docker Container",
+      "type": "python",
+      "request": "launch",
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "/app"
+        }
+      ],
+      "port": 5678,
+      "host": "localhost"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "FastAPI + Tests",
+      "configurations": [
+        "Python: FastAPI Server",
+        "Python: Pytest All"
+      ]
+    }
+  ]
+}
