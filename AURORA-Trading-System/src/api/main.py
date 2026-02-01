@@ -1,26 +1,45 @@
 # src/api/main.py
 # AURORA Trading System - API Entry Point
-# Created: 2026-02-01
-# Purpose: Initialize and run the API server
+# Updated: 2026-02-02 (ST-20260202-004)
+# Purpose: Initialize FastAPI with integrated routes (DB + Cache + Events)
 
 from fastapi import FastAPI
+from fastapi.openapi.utils import get_openapi
 import uvicorn
 
-# Initialize FastAPI application
+# Import integrated routes
+from .routes import router
+
+# Initialize FastAPI application with OpenAPI documentation
 app = FastAPI(
     title="AURORA Trading API",
-    description="API for AURORA Trading System",
-    version="2.1"
+    description="Unified API integrating Database, Cache, and Event Store",
+    version="1.0.0",
+    docs_url="/api/v1/docs",
+    redoc_url="/api/v1/redoc",
+    openapi_url="/api/v1/openapi.json"
 )
 
-@app.get("/health")
-async def health_check():
-    """Health check endpoint"""
-    return {
-        "status": "ok",
-        "service": "AURORA-API",
-        "version": "2.1"
+# Include integrated routes
+app.include_router(router)
+
+# Custom OpenAPI schema
+def custom_openapi():
+    if app.openapi_schema:
+        return app.openapi_schema
+    openapi_schema = get_openapi(
+        title="AURORA Trading API",
+        version="1.0.0",
+        description="API Integration Layer - Cache + Database + Events",
+        routes=app.routes,
+    )
+    openapi_schema["info"]["x-logo"] = {
+        "url": "https://example.com/logo.png"
     }
+    app.openapi_schema = openapi_schema
+    return app.openapi_schema
+
+app.openapi = custom_openapi
 
 if __name__ == "__main__":
     # Run the server
