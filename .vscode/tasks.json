@@ -1,0 +1,199 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Python: Install Dependencies",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\pip.exe",
+      "args": [
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Python: Install Dev Dependencies",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\pip.exe",
+      "args": [
+        "install",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Format with Black",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\black.exe",
+      "args": [
+        "src",
+        "tests",
+        "--line-length=120"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test"
+      }
+    },
+    {
+      "label": "Python: Lint with Pylint",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\pylint.exe",
+      "args": [
+        "src",
+        "--exit-zero"
+      ],
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^(.+?):(\\d+):(\\d+): (\\w+): (.*)$",
+          "file": 1,
+          "location": 2,
+          "message": 5
+        }
+      }
+    },
+    {
+      "label": "Python: Lint with Ruff",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\ruff.exe",
+      "args": [
+        "check",
+        "src",
+        "tests"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Run Tests",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\pytest.exe",
+      "args": [
+        "tests/",
+        "-v",
+        "--tb=short"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test"
+      }
+    },
+    {
+      "label": "Python: Run Tests with Coverage",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\pytest.exe",
+      "args": [
+        "tests/",
+        "-v",
+        "--cov=src",
+        "--cov-report=html",
+        "--cov-report=term"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Start FastAPI Server",
+      "type": "shell",
+      "command": "${workspaceFolder}\\venv\\Scripts\\uvicorn.exe",
+      "args": [
+        "src.api.main:app",
+        "--reload",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ],
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Docker: Build Image",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "build",
+        "-t",
+        "aurora-trading-system:latest",
+        "."
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Run Container",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "run",
+        "-p",
+        "8000:8000",
+        "-v",
+        "${workspaceFolder}:/app",
+        "aurora-trading-system:latest"
+      ],
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Docker: Stop Container",
+      "type": "shell",
+      "command": "docker",
+      "args": [
+        "stop",
+        "$(docker ps -q --filter ancestor=aurora-trading-system:latest)"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Pull Latest",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "pull",
+        "origin",
+        "main"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Push Changes",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "push",
+        "origin",
+        "main"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "SonarQube: Analyze",
+      "type": "shell",
+      "command": "sonar-scanner",
+      "args": [
+        "-Dsonar.projectKey=aurora-trading-system",
+        "-Dsonar.sources=src",
+        "-Dsonar.host.url=http://localhost:9000",
+        "-Dsonar.login=${SONAR_TOKEN}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean: Remove Cache Files",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Get-ChildItem -Path src,tests -Include '__pycache__','*.pyc','.pytest_cache' -Recurse -Force | Remove-Item -Recurse -Force"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
