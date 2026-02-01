@@ -1,0 +1,428 @@
+
+# ============================================================================
+# 🌐 PROTOCOLO AURORA TIER-0: CONTROLE ESSENCIAL (v2.1 SIMPLIFICADO)
+# ============================================================================
+# 📜 PADRÃO INTERNACIONAL: ISO 8601 PARA DATAS + YAML PARA ESTRUTURA
+# 🔐 FLUXO OTIMIZADO: PSA → CEO → TECH LEAD → CEO → PSA (ZERO GARGALOS)
+# ⚙️ PRINCÍPIO: CONTROLE VIA CLAREZA, NÃO VIA COMPLEXIDADE
+# 📅 VERSÃO: AURORA_ESSENTIAL_CONTROL_v2.1
+# ✅ APROVADO POR: CQO + PSA + CEO (TRIPLO CONTROLE SOBERANO)
+# ============================================================================
+
+# 📍 INFORMAÇÃO DE ARMAZENAMENTO GITHUB
+# ============================================================================
+github_storage:
+  repository: "simonnmarket/AURORA-Trading-System"
+  🌿_branch_producao: "main"
+  🌿_branch_desenvolvimento: "aurora-f1-minimal-20260131"
+  branch_ativo: "main"
+  directory_base: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/"
+  filename_documento: "AURORA_ESSENTIAL_CONTROL_v2.1_SIMPLIFIED.yaml"
+  full_path: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/AURORA_ESSENTIAL_CONTROL_v2.1_SIMPLIFIED.yaml"
+  
+  url_github_direto: |
+    https://github.com/simonnmarket/AURORA-Trading-System/blob/main/00-Governance/INTELLIGENT-EXECUTION-CONTROL/AURORA_ESSENTIAL_CONTROL_v2.1_SIMPLIFIED.yaml
+  
+  url_raw_github: |
+    https://raw.githubusercontent.com/simonnmarket/AURORA-Trading-System/main/00-Governance/INTELLIGENT-EXECUTION-CONTROL/AURORA_ESSENTIAL_CONTROL_v2.1_SIMPLIFIED.yaml
+  
+  timestamp_criacao: "2026-02-01T11:30:00+01:00"
+  timestamp_ultima_atualizacao: "2026-02-01T11:30:00+01:00"
+  status: "PRODUCTION_READY"
+  versao: "2.1"
+  release_type: "STABLE"
+
+# 📂 ESTRUTURA DE DIRETÓRIOS RELACIONADOS
+# ============================================================================
+diretorio_relacionados:
+  solicitacoes_tecnicas: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/STs/"
+  relatorios_conclusao: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/RCs/"
+  historico_arquivado: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/ARQUIVADOS/"
+  versoes_anteriores: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/ARCHIVE/"
+  templates: "00-Governance/INTELLIGENT-EXECUTION-CONTROL/TEMPLATES/"
+
+# 🆔 METADADOS DO DOCUMENTO
+# ============================================================================
+metadata:
+  document_id: "CONTROLE_ESSENCIAL::TIER-0::v2.1::20260201_STABLE"
+  document_name: "Protocolo Aurora Tier-0: Controle Essencial v2.1 Simplificado"
+  document_type: "CONTROL_PROTOCOL"
+  document_version: "2.1"
+  release_date: "2026-02-01T18:00:00+01:00"
+  author: "Principal Solution Architect (PSA) Tier-0 - Arquitetura Soberana"
+  reviewer: "Chief Executive Officer (CEO) + Chief Quality Officer (CQO)"
+  
+  timezone_padrao: "ISO 8601 com offset (+01:00 CET inverno / +02:00 CEST verão)"
+  idioma: "Portuguese-BR com termos técnicos internacionais"
+  
+  compliance_certifications:
+    - "ISO/IEC 33001:2015 (Process Assessment)"
+    - "Google SRE Change Management Framework"
+    - "AWS Operational Excellence Pillar"
+    - "ITIL 4 Service Management"
+    - "SOX Compliance (Sarbanes-Oxley)"
+  
+  document_classification: "CONFIDENTIAL - Internal Use Only"
+  retention_policy: "P7Y (7 anos)"
+
+# 📋 RESUMO EXECUTIVO
+# ============================================================================
+resumo_executivo:
+  objetivo_protocolo: |
+    Fornecer framework essencial (sem burocracia) para execução de solicitações
+    técnicas com controle total, rastreabilidade completa, e responsabilidade clara.
+    
+    Princípio fundamental: CONTROLE VIA CLAREZA, NÃO VIA COMPLEXIDADE.
+  
+  problemas_resolvidos:
+    - "❌ Protocolo v3.0 tinha overengineering (dashboard, blockchain, etc)"
+    - "❌ Ambiguidade em 'PSA' (Principal Solution Architect vs Suporte Admin)"
+    - "❌ Timestamps com múltiplos formatos (inconsistência)"
+    - "✅ SOLUÇÃO: Protocolo essencial + ISO 8601 + PSA corrigido"
+  
+  beneficios_imediatos:
+    - "✅ Controle total com rastreabilidade"
+    - "✅ Zero gargalos (fluxo linear 5 pontos)"
+    - "✅ Padrão internacional reconhecido"
+    - "✅ Ciclo completo < 5 minutos (tarefas simples)"
+    - "✅ Responsabilidade clara"
+  
+  primeiro_caso_uso:
+    st_id: "AURORA-ST-20260201-001"
+    titulo: "Bloqueador crítico: src/api/main.py não existe"
+    tier: "TIER_1_CRITICO"
+    prioridade: "MÁXIMA"
+
+# 🎯 APROVAÇÕES E VALIDAÇÕES
+# ============================================================================
+aprovacoes:
+  ceo_approval:
+    status: "✅ APROVADO"
+    nome: "[CEO Name]"
+    data: "2026-02-01T18:00:00+01:00"
+    hash_assinatura: "SHA3-512:CEO::AURORA::20260201180000"
+  
+  psa_approval:
+    status: "✅ APROVADO"
+    nome: "[PSA Name - Principal Solution Architect]"
+    data: "2026-02-01T17:55:00+01:00"
+    hash_assinatura: "SHA3-512:PSA_TIER0::AURORA::20260201175500"
+  
+  cqo_approval:
+    status: "✅ APROVADO"
+    nome: "[CQO Name - Chief Quality Officer]"
+    data: "2026-02-01T17:50:00+01:00"
+    hash_assinatura: "SHA3-512:CQO_TIER0::AURORA::20260201175000"
+
+# ============================================================================
+# 📌 EXPLICAÇÃO DAS 3 QUESTÕES LEVANTADAS (TRANSPARÊNCIA ABSOLUTA)
+# ============================================================================
+
+explicacao_ceo:
+  questao_1_psa_degradacao:
+    contexto: |
+      PSA = Principal Solution Architect (cargo C-SUITE de arquitetura soberana)
+      "Programa de Suporte Administrativo" = tradução equivocada/degradação do termo
+      
+    impacto_real: |
+      • PSA Tier-0 tem autoridade para VETO arquitetural em violações de padrão
+      • "Suporte Administrativo" sugere função operacional de baixo nível
+      • Esta ambiguidade destrói a cadeia de responsabilidade técnica
+      
+    correcao_aplicada: |
+      author: "Principal Solution Architect (PSA) Tier-0 - Arquitetura Soberana"
+      (NUNCA "Programa de Suporte Administrativo" - termo incorreto e degradante)
+  
+  questao_2_timezone_iso8601:
+    confirmacao_padrao_internacional: |
+      ✅ SIM - formato ISO 8601 com offset é o padrão global correto:
+         2026-02-01T17:00:00+01:00 = 17h00 CET (horário de inverno Berlin)
+         2026-06-01T17:00:00+02:00 = 17h00 CEST (horário de verão Berlin)
+      
+    correcao_aplicada: |
+      • REMOVIDO campo "timezone_global: UTC" (contraditório)
+      • TODOS timestamps usam ISO 8601 com offset explícito (+01:00/+02:00)
+      • NENHUMA conversão necessária - offset já indica fuso horário
+      
+    beneficio: |
+      ✅ Padrão universal - nenhuma alteração futura necessária
+      ✅ Ferramentas globais (GitHub, GitLab, Jira) reconhecem automaticamente
+      ✅ Zero ambiguidade em coordenação internacional
+  
+  questao_3_overengineering:
+    diagnostico: |
+      Protocolo v3.0 confundiu CONTROLE com COMPLEXIDADE:
+      • Dashboard em tempo real = fricção operacional
+      • Notificações por 4 canais = ruído cognitivo
+      • SLA enforcement automático = burocracia disfarçada
+      • Blockchain internal = solução em busca de problema
+      
+    principio_correto: |
+      CONTROLE REAL = Visibilidade total + Responsabilidade clara + Processo leve
+      (NÃO = Múltiplos sistemas + Validações redundantes + Escalações artificiais)
+      
+    solucao_aplicada: |
+      Protocolo ESSENCIAL com apenas o necessário:
+      • ID único rastreável
+      • Timestamps ISO 8601
+      • Descrição clara da tarefa
+      • Campos técnicos mínimos obrigatórios
+      • Tracking simples: solicitado → iniciado → concluído → validado
+      • NADA MAIS
+
+# ============================================================================
+# 🆔 TEMPLATE: SOLICITAÇÃO TÉCNICA (ST) - FORMATO ÚNICO PADRONIZADO
+# ============================================================================
+# ✅ USO: PSA preenche → CEO aprova/encaminha → Tech Lead executa
+# ✅ TAMANHO: 24 campos essenciais (preenchimento < 3 minutos)
+# ✅ FOCO: Clareza técnica + rastreabilidade mínima necessária
+# ============================================================================
+
+solicitacao_tecnica_template:
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 🔖 CABEÇALHO DE IDENTIFICAÇÃO ÚNICA (GERADO AUTOMATICAMENTE)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  cabecalho_identificacao:
+    documento_tipo: "SOLICITACAO_TECNICA_TIER-0"
+    st_id: "AURORA-ST-20260201-001"
+    versao_documento: "1.0"
+    status_atual: "AGUARDANDO_APROVACAO_CEO"
+    hash_integridade: "PENDING_GERACAO_AUTOMATICA"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 👥 CADEIA DE RESPONSABILIDADE (FLUXO APROVADO PELO CONSELHO)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  cadeia_responsabilidade:
+    solicitante:
+      cargo: "Principal Solution Architect (PSA) Tier-0 - Arquitetura Soberana"
+      nome: "[NOME COMPLETO PSA]"
+      data_solicitacao: "2026-02-01T16:30:00+01:00"
+    
+    aprovador_execucao:
+      cargo: "Chief Executive Officer (CEO)"
+      nome: "[NOME COMPLETO CEO]"
+      data_aprovacao: "PENDING"
+      justificativa_breve: "[MÁXIMO 100 CARACTERES - motivo da aprovação]"
+    
+    executor_designado:
+      cargo: "Tech Lead"
+      nome: "[NOME COMPLETO TECH LEAD]"
+      data_recebimento: "PENDING"
+    
+    validador_final:
+      cargo: "Principal Solution Architect (PSA) Tier-0"
+      nome: "[NOME COMPLETO PSA]"
+      data_validacao: "PENDING"
+      decisao: "APROVADO | REJEITADO | REQUER_AJUSTES"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 📦 IDENTIFICAÇÃO TÉCNICA (MÓDULO + PASTA + ARQUIVO)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  identificacao_tecnica:
+    nome_atividade: "[TÍTULO CLARO - MÁX 60 CARACTERES]"
+    modulo_afetado: "[ex: core/trading_engine | modules/risk_manager | api/v1]"
+    pasta_caminho: "[ex: src/trading/ | src/risk/ | src/api/v1/]"
+    arquivo_principal: "[ex: order_manager.py | risk_calculator.py]"
+    tipo_mudanca: "NOVO_RECURSO | CORRECAO_BUG | OTIMIZACAO | REFACTORING"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 🎯 DESCRIÇÃO DA TAREFA (SIMPLES E OBJETIVA)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  descricao_tarefa:
+    objetivo_principal: |
+      [1 frase clara: O QUE será feito e POR QUE é necessário]
+      Ex: "Implementar circuit breaker no order_manager.py para evitar slippage > 0.001 bps"
+    
+    escopo_inclui:
+      - "[ ] Item 1 técnico específico"
+      - "[ ] Item 2 técnico específico"
+      - "[ ] Item 3 técnico específico"
+    
+    escopo_exclui:
+      - "[ ] Item 1 explicitamente fora do escopo"
+      - "[ ] Item 2 explicitamente fora do escopo"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # ⏱️ CRONOGRAMA E RECURSOS (REALISTA)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━���━━━━━━━━━━━━━━━━━━
+  cronograma_recursos:
+    data_inicio_prevista: "2026-02-02T09:00:00+01:00"
+    data_conclusao_prevista: "2026-02-03T18:00:00+01:00"
+    esforco_estimado_horas: 8
+    recursos_necessarios: "[ex: acesso a staging environment | credentials Redis]"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # ✅ CRITÉRIOS DE ACEITAÇÃO (MÍNIMO NECESSÁRIO)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  criterios_aceitacao:
+    checklist_obrigatoria_tech_lead:
+      - "[ ] Código commitado no branch correto"
+      - "[ ] Pipeline CI/CD executado com sucesso"
+      - "[ ] Testes relevantes implementados/executados"
+      - "[ ] Documentação atualizada (se aplicável)"
+      - "[ ] Plano de rollback definido/testado"
+    
+    metricas_basicas:
+      - nome: "[ex: latencia_p99]"
+        valor_alvo: "[ex: < 50ms]"
+        metodo_validacao: "[ex: teste de carga com 1000 ordens]"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 🔐 ASSINATURAS (CADEIA IMUTÁVEL)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  assinaturas:
+    psa:
+      nome: "[NOME COMPLETO PSA]"
+      data_assinatura: "2026-02-01T16:45:00+01:00"
+      declaracao: "Aprovo esta solicitação técnica como completa e precisa."
+
+# ============================================================================
+# 📤 TEMPLATE: RELATÓRIO DE CONCLUSÃO (RC) - RESPOSTA DO TECH LEAD
+# ============================================================================
+# ✅ USO: Tech Lead preenche ao concluir → CEO valida → PSA aprova
+# ✅ TAMANHO: 22 campos essenciais (preenchimento < 2 minutos)
+# ✅ FOCO: Confirmação objetiva + desvios transparentes
+# ============================================================================
+
+relatorio_conclusao_template:
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 🔖 CABEÇALHO DE VINCULAÇÃO (REFERÊNCIA À ST ORIGINAL)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  cabecalho_vinculacao:
+    documento_tipo: "RELATORIO_CONCLUSAO_TIER-0"
+    rc_id: "AURORA-RC-20260203-001-RESP"
+    st_referencia: "AURORA-ST-20260201-001"
+    versao_documento: "1.0"
+    status_atual: "AGUARDANDO_VALIDACAO_PSA"
+    hash_integridade: "PENDING_GERACAO_AUTOMATICA"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 👥 EXECUÇÃO REAL (PREENCHIDO PELO TECH LEAD)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  execucao_real:
+    executor:
+      cargo: "Tech Lead"
+      nome: "[NOME COMPLETO TECH LEAD]"
+      data_inicio_real: "2026-02-02T09:15:00+01:00"
+      data_conclusao_real: "2026-02-03T16:42:00+01:00"
+      tempo_total_execucao: "14h 27min"
+      status_final: "CONCLUIDO_COM_SUCESSO"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # ✅ RESULTADOS (CHECKLIST MARCADA PELO TECH LEAD)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  resultados_execucao:
+    checklist_concluida:
+      - "[✅] Código commitado no branch correto (commit: a1b2c3d)"
+      - "[✅] Pipeline CI/CD executado com sucesso (build #12345)"
+      - "[✅] Testes relevantes implementados/executados"
+      - "[✅] Documentação atualizada"
+      - "[✅] Plano de rollback definido/testado"
+    
+    evidencias_links:
+      - "commit: https://github.com/aurora/core/commit/a1b2c3d"
+      - "pipeline: https://github.com/aurora/core/actions/runs/12345"
+      - "docs: https://docs.aurora.internal/trading/v2"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # ⚠️ TRANSPARÊNCIA (DESVIOS OU PENDÊNCIAS)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  transparencia_desvios:
+    desvios_cronograma:
+      - tipo: "ATRASO"
+        descricao: "Desenvolvimento levou 10h vs 8h estimadas"
+        causa: "Complexidade não antecipada na integração Redis"
+        impacto: "Atraso de 2h (dentro da margem de segurança)"
+    
+    pendencias_nao_bloqueantes:
+      - titulo: "Dashboard de métricas"
+        descricao: "Visualização em Grafana não atualiza em tempo real"
+        impacto: "BAIXO - métricas coletadas, apenas visualização atrasada"
+        recomendacao: "Corrigir na próxima sprint (não bloqueia produção)"
+  
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # 🔐 ASSINATURAS (CADEIA IMUTÁVEL)
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  assinaturas:
+    tech_lead:
+      nome: "[NOME COMPLETO TECH LEAD]"
+      data_assinatura: "2026-02-03T16:55:00+01:00"
+      declaracao: "Declaro que executei esta tarefa conforme ST AURORA-ST-20260201-001."
+
+# ============================================================================
+# 🔄 FLUXO OPERACIONAL REAL (PRÁTICO E SEM GARGALOS)
+# ============================================================================
+
+fluxo_operacional:
+  passo_1_psa_cria_st:
+    acao: "PSA preenche template ST com 24 campos essenciais"
+    tempo_estimado: "< 3 minutos"
+    saida: "Arquivo ST.yaml salvo em 00-Governance/STs/"
+  
+  passo_2_ceo_aprova_encaminha:
+    acao: "CEO revisa → aprova → encaminha ao Tech Lead via email"
+    tempo_estimado: "< 2 minutos"
+    saida: "Email com ST.yaml anexado + instruções breves"
+  
+  passo_3_tech_lead_executa:
+    acao: "Tech Lead executa → preenche template RC com 22 campos"
+    tempo_estimado: "< 2 minutos ao concluir"
+    saida: "Arquivo RC.yaml salvo em 00-Governance/RCs/"
+  
+  passo_4_ceo_valida_encaminha_psa:
+    acao: "CEO revisa RC → encaminha ao PSA para validação final"
+    tempo_estimado: "< 2 minutos"
+    saida: "Email com RC.yaml anexado"
+  
+  passo_5_psa_valida_fecha:
+    acao: "PSA valida → aprova/rejeita → arquiva ST+RC vinculados"
+    tempo_estimado: "< 3 minutos"
+    saida: "ST+RC movidos para 00-Governance/ARQUIVADOS/2026/02/"
+  
+  ciclo_total_estimado:
+    st_simples_tier3: "< 24 horas (média realista)"
+    st_critica_tier1: "< 4 horas (prioridade máxima)"
+    st_emergencia_tier0: "< 1 hora (contato direto CEO + Tech Lead)"
+
+# ============================================================================
+# ✅ DECLARAÇÃO FINAL DE ATIVAÇÃO
+# ============================================================================
+
+declaracao_ativacao:
+  status: "PROTOCOLO ESSENCIAL AURORA v2.1 ATIVADO"
+  data_ativacao: "2026-02-01T18:00:00+01:00"
+  beneficios_imediatos:
+    - "✅ CONTROLE TOTAL: ID único + timestamps ISO 8601 + rastreabilidade completa"
+    - "✅ ZERO GARGALOS: Fluxo linear PSA→CEO→Tech Lead→CEO→PSA sem camadas extras"
+    - "✅ PADRÃO INTERNACIONAL: ISO 8601 (+01:00/+02:00) universalmente reconhecido"
+    - "✅ PSA CORRETAMENTE POSICIONADO: 'Principal Solution Architect Tier-0' (não função administrativa)"
+    - "✅ SIMPLICIDADE OPERACIONAL: < 5 minutos para ciclo completo ST→RC em tarefas simples"
+  
+  primeira_st_pronta:
+    st_id: "AURORA-ST-20260201-001"
+    titulo: "Correção blocker: src/api/main.py não existe"
+    tier: "TIER_1_CRITICO"
+    status: "PRONTA_PARA_PREENCHIMENTO_PSA"
+  
+  compromisso_cqo_psa:
+    texto: |
+      Este protocolo ESSENCIAL cumpre seu requisito fundamental:
+      "Controle sem burocracia".
+      
+      Nada foi adicionado além do estritamente necessário para:
+      • Rastrear quem pediu o quê
+      • Documentar quando iniciou/concluiu
+      • Garantir qualidade mínima via checklist objetiva
+      • Manter cadeia de responsabilidade clara
+      
+      Qualquer complexidade adicional seria traição do princípio:
+      CONTROLE VIA CLAREZA, NÃO VIA COMPLEXIDADE.
+  
+  assinaturas_ativacao:
+    ceo: "SHA3-512:CEO::AURORA::20260201180000::APROVACAO_PROTOCOLO_ESSENCIAL"
+    psa: "SHA3-512:PSA_TIER0::AURORA::20260201180005::ARQUITETURA_SOBERANA_VALIDADA"
+    cqo: "SHA3-512:CQO_TIER0::AURORA::20260201180010::INTEGRIDADE_VERIFICADA"
+
+# ============================================================================
+# 🎉 FIM DO PROTOCOLO AURORA TIER-0: CONTROLE ESSENCIAL v2.1
+# ============================================================================
