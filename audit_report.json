@@ -1,1 +1,325 @@
-{"audit_data": {"timestamp": "2026-01-31 22:07:14 UTC","user_login": "simonnmarket","actions": []}}
+"existing_files": [
+  {
+    "id": 1,
+    "file_name": "02-KPI_DASHBOARD_SPEC_v1.0.md",
+    "path": "00-Governance/SPECIFICATIONS/",
+    "type": "markdown",
+    "module_classification": "GOVERNANCE",
+    "status": "complete"
+  },
+  {
+    "id": 2,
+    "file_name": "requirements.txt",
+    "path": "./",
+    "type": "txt",
+    "module_classification": "CONFIG",
+    "status": "complete"
+  },
+  {
+    "id": 3,
+    "file_name": "setup-venv.ps1",
+    "path": "./",
+    "type": "powershell",
+    "module_classification": "DEPLOYMENT",
+    "status": "complete"
+  },
+  {
+    "id": 4,
+    "file_name": "setup-aurora-local.ps1",
+    "path": "./",
+    "type": "powershell",
+    "module_classification": "DEPLOYMENT",
+    "status": "complete"
+  },
+  {
+    "id": 5,
+    "file_name": ".env.example",
+    "path": "./",
+    "type": "txt",
+    "module_classification": "CONFIG",
+    "status": "complete"
+  },
+  {
+    "id": 6,
+    "file_name": "README.md",
+    "path": "./",
+    "type": "markdown",
+    "module_classification": "DOCS",
+    "status": "partial"
+  },
+  {
+    "id": 7,
+    "file_name": "LICENSE",
+    "path": "./",
+    "type": "txt",
+    "module_classification": "GOVERNANCE",
+    "status": "complete"
+  },
+  {
+    "id": 8,
+    "file_name": ".gitignore",
+    "path": "./",
+    "type": "txt",
+    "module_classification": "CONFIG",
+    "status": "complete"
+  },
+  {
+    "id": 9,
+    "file_name": "settings.json",
+    "path": ".vscode/",
+    "type": "json",
+    "module_classification": "CONFIG",
+    "status": "complete"
+  },
+  {
+    "id": 10,
+    "file_name": "extensions.json",
+    "path": ".vscode/",
+    "type": "json",
+    "module_classification": "CONFIG",
+    "status": "complete"
+  },
+  {
+    "id": 11,
+    "file_name": "audit_report.json",
+    "path": "./",
+    "type": "json",
+    "module_classification": "GOVERNANCE",
+    "status": "complete"
+  },
+  {
+    "id": 12,
+    "file_name": "audit_report.yaml",
+    "path": "./",
+    "type": "yaml",
+    "module_classification": "GOVERNANCE",
+    "status": "complete"
+  },
+  {
+    "id": 13,
+    "file_name": "audit_matrix.py",
+    "path": "scripts/",
+    "type": "python",
+    "module_classification": "GOVERNANCE",
+    "status": "complete"
+  }
+]
+"critical_gaps": [
+  {
+    "gap_id": 1,
+    "title": "Sistema de Configuração Centralizado",
+    "severity_level": "Critical",
+    "impact": "Sem gerenciamento de variáveis de ambiente",
+    "effort_estimate": "4 hours",
+    "timeline_week": 1
+  },
+  {
+    "gap_id": 2,
+    "title": "Camada de Banco de Dados",
+    "severity_level": "Critical",
+    "impact": "Sem persistência de dados",
+    "effort_estimate": "12 hours",
+    "timeline_week": "1-2"
+  },
+  {
+    "gap_id": 3,
+    "title": "Engine de Trading",
+    "severity_level": "Critical",
+    "impact": "Sem funcionalidade principal de trading",
+    "effort_estimate": "24 hours",
+    "timeline_week": "2-3"
+  },
+  {
+    "gap_id": 4,
+    "title": "Validação de Segurança",
+    "severity_level": "Critical",
+    "impact": "Sistema exposto a riscos de segurança",
+    "effort_estimate": "16 hours",
+    "timeline_week": 2
+  },
+  {
+    "gap_id": 5,
+    "title": "API REST",
+    "severity_level": "Critical",
+    "impact": "Sem endpoints para cliente externo",
+    "effort_estimate": "20 hours",
+    "timeline_week": 3
+  },
+  {
+    "gap_id": 6,
+    "title": "Prometheus Metrics",
+    "severity_level": "Critical",
+    "impact": "Sem observabilidade",
+    "effort_estimate": "12 hours",
+    "timeline_week": 2
+  },
+  {
+    "gap_id": 7,
+    "title": "Expert Advisor MQL5",
+    "severity_level": "Critical",
+    "impact": "Sem automação de trading no MetaTrader",
+    "effort_estimate": "30 hours",
+    "timeline_week": "3-4"
+  },
+  {
+    "gap_id": 8,
+    "title": "Sistema de Testes",
+    "severity_level": "High",
+    "impact": "Sem garantia de qualidade de código",
+    "effort_estimate": "40 hours",
+    "timeline_week": "2-4"
+  },
+  {
+    "gap_id": 9,
+    "title": "Documentação Técnica",
+    "severity_level": "High",
+    "impact": "Dificuldade de onboarding e manutenção",
+    "effort_estimate": "20 hours",
+    "timeline_week": 4
+  },
+  {
+    "gap_id": 10,
+    "title": "CI/CD Pipeline",
+    "severity_level": "High",
+    "impact": "Sem automação de build/test/deploy",
+    "effort_estimate": "16 hours",
+    "timeline_week": 4
+  },
+  {
+    "gap_id": 11,
+    "title": "Docker & Deployment",
+    "severity_level": "High",
+    "impact": "Sem containerização ou estratégia de deploy",
+    "effort_estimate": "24 hours",
+    "timeline_week": "4-5"
+  },
+  {
+    "gap_id": 12,
+    "title": "Notificações e Alertas",
+    "severity_level": "High",
+    "impact": "Sem comunicação com usuários sobre eventos críticos",
+    "effort_estimate": "12 hours",
+    "timeline_week": 3
+  }
+]
+"project_phases": [
+  {
+    "phase_id": 1,
+    "phase_name": "CORE SYSTEM",
+    "timeline": "Week 1-2",
+    "files_count": 12,
+    "effort_hours": 32,
+    "blockers": "None",
+    "status": "pending"
+  },
+  {
+    "phase_id": 2,
+    "phase_name": "MODULES",
+    "timeline": "Week 2-3",
+    "files_count": 16,
+    "effort_hours": 68,
+    "blockers": "Phase 1 complete",
+    "status": "pending"
+  },
+  {
+    "phase_id": 3,
+    "phase_name": "SCHEMAS & MQL5",
+    "timeline": "Week 3-4",
+    "files_count": 10,
+    "effort_hours": 74,
+    "blockers": "Phase 2 partial",
+    "status": "pending"
+  },
+  {
+    "phase_id": 4,
+    "phase_name": "DOCUMENTATION & DEPLOYMENT",
+    "timeline": "Week 4",
+    "files_count": 6,
+    "effort_hours": 60,
+    "blockers": "Phase 1-3 complete",
+    "status": "pending"
+  }
+]
+"module_classification": {
+  "GOVERNANCE": {
+    "count": 3,
+    "description": "Documentação estratégica, especificações, decisões"
+  },
+  "CORE": {
+    "count": 12,
+    "description": "Sistema central (config, DB, segurança)"
+  },
+  "MODULES": {
+    "count": 16,
+    "description": "Funcionalidades de negócio"
+  },
+  "SCHEMAS": {
+    "count": 10,
+    "description": "MQL5 + estruturas de dados"
+  },
+  "UTILS": {
+    "count": 4,
+    "description": "Funções auxiliares"
+  },
+  "API": {
+    "count": 6,
+    "description": "Endpoints REST + WebSocket"
+  },
+  "PROMETHEUS": {
+    "count": 3,
+    "description": "Monitoramento e observabilidade"
+  },
+  "TESTS": {
+    "count": 20,
+    "description": "Testes automatizados"
+  },
+  "DOCS": {
+    "count": 6,
+    "description": "Documentação técnica"
+  },
+  "DEPLOYMENT": {
+    "count": 8,
+    "description": "CI/CD, Docker, Kubernetes"
+  },
+  "CONFIG": {
+    "count": 5,
+    "description": "Configurações e variáveis"
+  }
+}
+"strategic_recommendations": [
+  {
+    "rec_id": 1,
+    "title": "Aprovar Estrutura Internacional",
+    "description": "Implementar padrão internacional (MODULES/CORE/UTILS/etc)",
+    "impact": "Melhor manutenibilidade e escalabilidade",
+    "urgency": "critical"
+  },
+  {
+    "rec_id": 2,
+    "title": "Priorizar FASE 1",
+    "description": "Implementar CORE System primeiro (Semana 1-2)",
+    "impact": "Reduz bloqueadores e estabelece fundação sólida",
+    "urgency": "critical"
+  },
+  {
+    "rec_id": 3,
+    "title": "Afetar Recursos Estrategicamente",
+    "description": "Tech Lead 60%, Senior Dev 80%, Junior Dev 100%",
+    "impact": "Timeline de 4 semanas até MVP",
+    "urgency": "high"
+  },
+  {
+    "rec_id": 4,
+    "title": "Ativar Métricas de Progresso",
+    "description": "Weekly status reports ao Conselho",
+    "impact": "Transparência e controle",
+    "urgency": "high"
+  },
+  {
+    "rec_id": 5,
+    "title": "Validações Intermediárias",
+    "description": "Validar sistema ao fim de cada fase",
+    "impact": "Reduz riscos de falhas finais",
+    "urgency": "medium"
+  }
+]

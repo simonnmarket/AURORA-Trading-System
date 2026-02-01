@@ -68,10 +68,5 @@
     "**/.venv": true,
     "**/node_modules": true,
     "**/.pytest_cache": true
-  },
-  
-  "AURORA_ENV": "development",
-  "AURORA_LOG_LEVEL": "INFO",
-  "AURORA_API_PORT": 8000,
-  "AURORA_BROKER_TIMEOUT_MS": 5000
+  }
 }
